@@ -1,17 +1,17 @@
 # Ship to store
-## Customers can place BOPIS orders that will be shipped to their selected pickup location even if inventory is not available for same-day pickup.
-When a product is not available for same day pickup, customers can still place a BOPIS order and pick it up later when the inventory becomes available at the pickup location. After importing these orders, OMS will route them to a fulfillment location where inventory is available and ship them to the pickup location selected by the customer. Upon receiving the inventory at the pickup location, customers will get notified to pick up their orders.
+## Customers can place store pickup orders that will be shipped to their selected pickup location even if inventory is not available for same-day pickup.
+When a product is not available for same day pickup, customers can still place a store pickup order and pick it up later when the inventory becomes available at the pickup location. After importing these orders, OMS will route them to a fulfillment location where inventory is available and ship them to the pickup location selected by the customer. Upon receiving the inventory at the pickup location, customers will get notified to pick up their orders.
 
 Customers who live in apartment buildings often face delivery restrictions, forcing them to look for store pickup options. If a product is not available for same-day pickup due to stock outs, customers are forced to repeatedly check store inventory for pickup, encouraging cart abandonment and lost sales.
 
-Allowing customers to place BOPIS orders without inventory constraint eliminates the frustration of constantly checking for same-day pickup availability. The OMS will process these orders as regular shipping orders and intelligently route the order to a fulfillment location where inventory is available and ship them to the pickup location selected by the customer. Once the order arrives at the store, store associates will change the status of orders in OMS to “scheduled” and notify customers to pick up their orders.
+Allowing customers to place store pickup orders without inventory constraint eliminates the frustration of constantly checking for same-day pickup availability. The OMS will process these orders as regular shipping orders and intelligently route the order to a fulfillment location where inventory is available and ship them to the pickup location selected by the customer. Once the order arrives at the store, store associates will change the status of orders in OMS to “scheduled” and notify customers to pick up their orders.
 
-Retailers using Hotwax Commerce can change their frontend experience for products which are unavailable for same day pick-up from 'Out of Stock' to 'Ship to store’ or ‘Pick up in two days’. In the backend, the checkInventory API will fetch all available BOPIS locations and for locations where product inventory is out of stock the PDP will display a pickup later option.
+Retailers using Hotwax Commerce can change their frontend experience for products which are unavailable for same day pick-up from 'Out of Stock' to 'Ship to store’ or ‘Pick up in two days’. In the backend, the checkInventory API will fetch all available store pickup locations and for locations where product inventory is out of stock the PDP will display a pickup later option.
 
 
 ### FAQs
 
-**Question 1: What will the product detail page (PDP) display when the customer searches for all available BOPIS locations and some pickup locations have inventory while others do not?**
+**Question 1: What will the product detail page (PDP) display when the customer searches for all available store pickup locations and some pickup locations have inventory while others do not?**
 
 Answer: Pickup locations with available inventory will display the "Pickup Today" option, while pickup locations without inventory will show "Ship to Store'' or "Pickup in Two Days" option. Regardless of the inventory availability, all pickup locations will be sorted alphabetically. 
 
